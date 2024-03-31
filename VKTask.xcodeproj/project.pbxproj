@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D94C8482BB9DECA00BA351B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D94C8472BB9DECA00BA351B /* Constants.swift */; };
+		2DFACDD52BB854A700E1F230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFACDD42BB854A700E1F230 /* AppDelegate.swift */; };
+		2DFACDD72BB854A700E1F230 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFACDD62BB854A700E1F230 /* SceneDelegate.swift */; };
+		2DFACDDE2BB854A900E1F230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFACDDD2BB854A900E1F230 /* Assets.xcassets */; };
+		2DFACDE12BB854A900E1F230 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2DFACDE02BB854A900E1F230 /* Base */; };
+		2DFACDE92BB855A700E1F230 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFACDE82BB855A700E1F230 /* ListViewController.swift */; };
+		2DFACDEC2BB858E000E1F230 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFACDEB2BB858E000E1F230 /* Models.swift */; };
+		2DFACDEF2BB85A9C00E1F230 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFACDEE2BB85A9C00E1F230 /* NetworkManager.swift */; };
+		2DFACDF12BB8702500E1F230 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFACDF02BB8702500E1F230 /* ServiceCell.swift */; };
+		C3C8EEBD57F1EFB882EF8A91 /* Pods_VKTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2019DC137439E84B350617 /* Pods_VKTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15C62B804CB59DB0C6E1DEF7 /* Pods-VKTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKTask.debug.xcconfig"; path = "Target Support Files/Pods-VKTask/Pods-VKTask.debug.xcconfig"; sourceTree = "<group>"; };
+		2D94C8472BB9DECA00BA351B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2DFACDD12BB854A700E1F230 /* VKTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFACDD42BB854A700E1F230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DFACDD62BB854A700E1F230 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2DFACDDD2BB854A900E1F230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DFACDE02BB854A900E1F230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DFACDE22BB854A900E1F230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFACDE82BB855A700E1F230 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		2DFACDEB2BB858E000E1F230 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2DFACDEE2BB85A9C00E1F230 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2DFACDF02BB8702500E1F230 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		7A8A2ADF0BFC08CCF89FB28A /* Pods-VKTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKTask.release.xcconfig"; path = "Target Support Files/Pods-VKTask/Pods-VKTask.release.xcconfig"; sourceTree = "<group>"; };
+		BB2019DC137439E84B350617 /* Pods_VKTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DFACDCE2BB854A700E1F230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C8EEBD57F1EFB882EF8A91 /* Pods_VKTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D94C8432BB9D7F500BA351B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2DFACDD42BB854A700E1F230 /* AppDelegate.swift */,
+				2DFACDD62BB854A700E1F230 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2D94C8442BB9D80200BA351B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DFACDE82BB855A700E1F230 /* ListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D94C8452BB9D83900BA351B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2DFACDF02BB8702500E1F230 /* ServiceCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D94C8462BB9DEB700BA351B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D94C8472BB9DECA00BA351B /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2DFACDC82BB854A700E1F230 = {
+			isa = PBXGroup;
+			children = (
+				2DFACDD32BB854A700E1F230 /* VKTask */,
+				2DFACDD22BB854A700E1F230 /* Products */,
+				A83B4EBBF4319C304A305617 /* Pods */,
+				C639408679B566880F6D228D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DFACDD22BB854A700E1F230 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DFACDD12BB854A700E1F230 /* VKTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DFACDD32BB854A700E1F230 /* VKTask */ = {
+			isa = PBXGroup;
+			children = (
+				2D94C8432BB9D7F500BA351B /* Delegates */,
+				2DFACDED2BB85A8E00E1F230 /* Managers */,
+				2DFACDEA2BB8561800E1F230 /* Models */,
+				2D94C8452BB9D83900BA351B /* Cells */,
+				2D94C8442BB9D80200BA351B /* Controllers */,
+				2D94C8462BB9DEB700BA351B /* Utils */,
+				2DFACDDD2BB854A900E1F230 /* Assets.xcassets */,
+				2DFACDDF2BB854A900E1F230 /* LaunchScreen.storyboard */,
+				2DFACDE22BB854A900E1F230 /* Info.plist */,
+			);
+			path = VKTask;
+			sourceTree = "<group>";
+		};
+		2DFACDEA2BB8561800E1F230 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DFACDEB2BB858E000E1F230 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DFACDED2BB85A8E00E1F230 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2DFACDEE2BB85A9C00E1F230 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A83B4EBBF4319C304A305617 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15C62B804CB59DB0C6E1DEF7 /* Pods-VKTask.debug.xcconfig */,
+				7A8A2ADF0BFC08CCF89FB28A /* Pods-VKTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C639408679B566880F6D228D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB2019DC137439E84B350617 /* Pods_VKTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DFACDD02BB854A700E1F230 /* VKTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DFACDE52BB854A900E1F230 /* Build configuration list for PBXNativeTarget "VKTask" */;
+			buildPhases = (
+				F3569712EE7D71B12DF1B79C /* [CP] Check Pods Manifest.lock */,
+				2DFACDCD2BB854A700E1F230 /* Sources */,
+				2DFACDCE2BB854A700E1F230 /* Frameworks */,
+				2DFACDCF2BB854A700E1F230 /* Resources */,
+				07BC4D8882A9EF22D15F9188 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKTask;
+			productName = VKTask;
+			productReference = 2DFACDD12BB854A700E1F230 /* VKTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DFACDC92BB854A700E1F230 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					2DFACDD02BB854A700E1F230 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 2DFACDCC2BB854A700E1F230 /* Build configuration list for PBXProject "VKTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DFACDC82BB854A700E1F230;
+			productRefGroup = 2DFACDD22BB854A700E1F230 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DFACDD02BB854A700E1F230 /* VKTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DFACDCF2BB854A700E1F230 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFACDDE2BB854A900E1F230 /* Assets.xcassets in Resources */,
+				2DFACDE12BB854A900E1F230 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07BC4D8882A9EF22D15F9188 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKTask/Pods-VKTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKTask/Pods-VKTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VKTask/Pods-VKTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3569712EE7D71B12DF1B79C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DFACDCD2BB854A700E1F230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFACDD52BB854A700E1F230 /* AppDelegate.swift in Sources */,
+				2DFACDD72BB854A700E1F230 /* SceneDelegate.swift in Sources */,
+				2DFACDEF2BB85A9C00E1F230 /* NetworkManager.swift in Sources */,
+				2DFACDF12BB8702500E1F230 /* ServiceCell.swift in Sources */,
+				2D94C8482BB9DECA00BA351B /* Constants.swift in Sources */,
+				2DFACDE92BB855A700E1F230 /* ListViewController.swift in Sources */,
+				2DFACDEC2BB858E000E1F230 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DFACDDF2BB854A900E1F230 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFACDE02BB854A900E1F230 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DFACDE32BB854A900E1F230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DFACDE42BB854A900E1F230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DFACDE62BB854A900E1F230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15C62B804CB59DB0C6E1DEF7 /* Pods-VKTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DL2TVP4CMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VKTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maksa.VKTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DFACDE72BB854A900E1F230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8A2ADF0BFC08CCF89FB28A /* Pods-VKTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DL2TVP4CMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VKTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maksa.VKTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DFACDCC2BB854A700E1F230 /* Build configuration list for PBXProject "VKTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFACDE32BB854A900E1F230 /* Debug */,
+				2DFACDE42BB854A900E1F230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DFACDE52BB854A900E1F230 /* Build configuration list for PBXNativeTarget "VKTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFACDE62BB854A900E1F230 /* Debug */,
+				2DFACDE72BB854A900E1F230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DFACDC92BB854A700E1F230 /* Project object */;
+}
